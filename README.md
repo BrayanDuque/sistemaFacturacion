@@ -1,12 +1,11 @@
 # React + Vite
+ Se crea sistema de facturación realizado/creado con react.jsx, vite y el framework de css tailwind. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ ## Contenido o detalles a tener en cuenta 
+ - Se crea con campos obligatorios los cuales si no se resuelven no se va a poder guardar la factura 
+ - Se crea validaciones en caso de que aparezca un error, se mostrará en pantalla 
+ - La app contiene 3 vistas controladas por el operador ternario, para mayor manejo 
+ - Sus onClick estan basados desde funciones realizadas posteriormente 
+ - Todo el código esta documentado con el fin de explicar detalladamente que hace cada parte del mismo
+ - La app de facturación esta desplegada en vercel con el link siguiente link https://sistema-facturacion-umber.vercel.app/
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
