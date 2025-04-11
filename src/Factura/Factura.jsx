@@ -205,6 +205,10 @@ export default function Factura() {
     ) : null;
   };
 
+  //Validacion para que no se repitan los números de factura con uno existente
+  const isDuplicateInvoice = (numero) => {
+    return invoices.some((invoice) => invoice.numero === numero);
+  };
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-6">
@@ -253,6 +257,12 @@ export default function Factura() {
                 className="w-full p-2 border rounded"
               />
               {renderError(errors.numero)}
+              {/* Verificar si el número de factura es duplicado */}
+              {isDuplicateInvoice(invoiceForm.numero) && (
+                <div className="text-red-500 text-sm mt-1">
+                  El número de factura ya existe.
+                </div>
+              )}
             </div>
 
             <div>
